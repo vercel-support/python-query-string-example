@@ -2,9 +2,10 @@
     "version": 2,
     "name": "python-query-string-example",
     "builds": [
-        { "src": "*.py", "use": "@now/python" }
+        { "src": "*.py", "use": "@now/python@canary" }
     ],
     "routes": [
-        { "src": ".*", "dest": "/" }
+        { "src": "/customRoute", "dest": "/" },
+        { "src": "/customRoute/", "dest": "/" }
     ]
 }
