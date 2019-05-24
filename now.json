@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "python-query-string-example",
+    "builds": [
+        { "src": "*.py", "use": "@now/python" }
+    ],
+    "routes": [
+        { "src": ".*", "dest": "/" }
+    ]
+}
